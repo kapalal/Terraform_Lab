@@ -1,3 +1,5 @@
 **/secrets
 .terraform.lock.hcl
 **/.terraform
+.gitignore
+vault-ca-demo
