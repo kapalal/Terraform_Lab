@@ -1,6 +1,6 @@
 resource "aws_instance" "labvm" {
-  provider = aws
-  ami = "ami-0257e70b7c6db1498"
+
+  ami = "ami-059236d06b055b2cf"
   instance_type = "t3.micro"
 
    network_interface {
@@ -21,7 +21,7 @@ resource "aws_vpc" "test-vpc" {
 resource "aws_subnet" "subnet-test1" {
   vpc_id            = aws_vpc.test-vpc.id
   cidr_block        = "10.0.0.0/24"
-  availability_zone = "eu-south-1a"
+  availability_zone = "eu-west-1a"
 
   tags = {
     Name = "lab"

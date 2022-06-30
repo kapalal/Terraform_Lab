@@ -1,4 +1,4 @@
-module "common" {
+module "Infra" {
   source = "../Terraform_Lab/Infra"
   #tenant_name = var.tenant_settings["tenant_name"]
   #ssh_public_key = var.tenant_settings["ssh_public_key"]
